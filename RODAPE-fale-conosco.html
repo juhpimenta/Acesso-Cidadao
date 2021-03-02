@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="/IMG/favicon.ico">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/70ee761d07.js"></script>
+    <link type="text/css" rel="stylesheet" href="CSS/stilo.css">
+
+
+
+    <title>Fale Conosco</title>
+</head>
+
+
+<body class="bg-azul-es">
+
+
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-sm-0 m-sm-0 bg-azul-es">
+        <div class="navbar col-12 col-sm-12 col-md-10 col-lg-8	col-xl-8 mx-auto text-center p-0">
+
+            <a class="navbar-brand pl-0" href="index.html"><i style="color: white" class="fas fa-users"></i> Acesso Cidadão</a>
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                <ul class="nav navbar-nav ml-auto pr-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"><i class="fas fa-info-circle"></i> Sobre<span class="sr-only">(página atual)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"><i class="fa fa-th"></i> Serviços<span class="sr-only">(página atual)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"><i class="fa fa-sign-in"></i> Entrar<span class="sr-only">(página atual)</span></a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <main role="main" class=" pb-5 bg-white">
+        <div class="content-wrapper col-12 col-sm-12 col-md-10 col-lg-8	col-xl-8 mx-auto p-0 pt-5">
+
+
+            <div class="container text-black-10 bg-purple shadow bg-light rounded mx-auto p-0 pt-5 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center pb-3">
+                        <h3 class="mb-0 text-info lh-100 text-center col-12 col-sm-12"><i class="fas fa-users text-info"></i> Acesso Cidadão</h3>
+                        <p class="text-center col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mx-auto">Cadastro único para utilizar os serviços ou participar de programas do estado do Espírito Santo.</p>
+                    </div>
+                </div>
+
+                <!-- barra separadora -->
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mx-auto">
+
+                        <div class="progress " style="height: 2px; ">
+                            <div class="progress-bar bg-info " role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div> <br>
+                <p class="text-center col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 mx-auto">*Aqui você tira dúvidas ou relata problemas relativos apenas aos serviços listados abaixo.
+                    Caso o serviço não conste na lista ou se gostaria de fazer uma reclamação ou denúncia geral,
+                    <a class="text-info" href="https://ouvidoria.es.gov.br/">CLIQUE AQUI</a> e acesse a ouvidoria do Governo do Estado.</p>
+
+                <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 mx-auto">
+                    <div class="form-row justify-content-center">
+
+                        <div class="form-group col-11 col-sm-11 col-md-6 col-lg-6 col-xl-6">
+                            <label for="ExibeCpf">Nome</label>
+                            <input id="cpf-desabilitado" class="form-control cpf cpf-mask" type="text" value="" maxlength="14" autocomplete="off">
+
+                        </div>
+                        <div class="form-group col-11 col-sm-11 col-md-6 col-lg-6 col-xl-6">
+                            <label for="inputDtNas">Sobrenome</label>
+                            <input type="text" class="form-control " id="inputDtNas">
+                        </div>
+                    </div>
+
+                    <div class="form-row justify-content-center">
+
+                        <div class="form-group col-11 col-sm-11 col-md-6 col-lg-6 col-xl-6">
+                            <label for="ExibeCpf">CPF</label>
+                            <input type="text" class="form-control " id="inputCPF" placeholder="" maxlength="14" onkeypress="formatarCPF(this)">
+
+                        </div>
+                        <div class="form-group col-11 col-sm-11 col-md-6 col-lg-6 col-xl-6">
+                            <label for="inputDtNas">Email</label>
+                            <input type="text" class="form-control " id="inputDtNas">
+                        </div>
+                    </div>
+
+                    <div class="form-row justify-content-center">
+
+
+                        <div class="form-group col-11 col-sm-11 col-md-6 col-lg-6 col-xl-6">
+                            <label for="inputDtNas">Serviços</label>
+                            <select class="form-control" id="change">
+                                <option value="0">Escolha um sistema</option>
+                                <option value="0">E-certificados</option>
+                                <option value="0">E-docs</option>
+                                <option value="0">E-ouv</option>
+                                <option value="0">Es na palma da mão</option>
+                                <option value="0">Jovens Valores</option>
+                                <option value="0">Processo digital</option>
+                                <option value="0">Seleção aluno</option>
+                                <option value="0">Seleção DT</option>
+                                <option value="0">SisComplet</option>
+                                <option value="1">Acesso Cidadão</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group col-11 col-sm-11 col-md-6 col-lg-6 col-xl-6">
+                            <label for="ExibeCpf">Assunto</label>
+                            <input id="cpf-desabilitado" class="form-control cpf cpf-mask" type="text" value="" maxlength="14" autocomplete="off">
+                        </div>
+                    </div>
+
+
+                    <div class="form-row justify-content-center">
+
+                        <div class="form-group col-11 col-sm-11 col-md-12 col-lg-12 col-xl-12">
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Mensagem</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- botoes -->
+                    <div class="form-row justify-content-center pb-5">
+
+                        <div class=" col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                            <button type="button" class="btn btn-info btn-block m-1" data-toggle="modal" data-target="#modalDuvidaEnviada">Enviar</button>
+                        </div>
+                        <div class=" col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                            <button type="button" class="btn btn-outline-danger btn-block m-1" data-toggle="modal" data-target="#modal-cancelar">Cancelar</button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <!-- Modal -->
+    <div class="col-10 col-sm-10 col-md-12 col-lg-12 col-xl-12 mx-auto ">
+        <div class="modal fade" id="modalDuvida" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header bg-danger">
+                        <h5 class="modal-title text-white" id="TituloModalCentralizado"><i class="fas fa-exclamation-triangle"></i> Atenção</h5>
+                        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        <p>Recebemos um grande volume de duvidas e a resposta pode demorar, por isso antes de enviar sua duvida verifique se a mesma não se encontra nas peguntas frequentes!</p>
+
+
+                    </div>
+                    <div class="modal-footer justify-content-center ">
+
+                        <a href="RODAPE-perguntas-frequentes.html"> <button type="button" class="btn btn-outline-info">Perguntas frequentes</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+     <!-- Modal duvida enviada com sucesso -->
+    <div class="col-10 col-sm-10 col-md-12 col-lg-12 col-xl-12 mx-auto ">
+        <div class="modal fade" id="modalDuvidaEnviada" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header bg-success">
+                        <h5 class="modal-title text-white" id="TituloModalCentralizado">Duvida enviada com sucesso!</h5>
+                        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        <p>Logo entraremos em contato pelo email informado! </p>
+
+
+                    </div>
+                    <div class="modal-footer justify-content-center ">
+
+                        <a href="index.html"> <button type="button" class="btn btn-outline-success">Ok</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal caqncelar -->
+            <div class="col-10 col-sm-10 col-md-12 col-lg-12 col-xl-12 mx-auto">
+                <div class="modal fade" id="modal-cancelar" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header bg-danger">
+                                <h5 class="modal-title text-white" id="TituloModalCentralizado">Cancelar envio de duvida</h5>
+                                <button type="button" class="close text-white" data-dismiss="modal" aria-label="Fechar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Deseja mesmo cancelar? <br> Cancelando todo o processo será perdido! </p>
+
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-outline-success" data-dismiss="modal">Não</button>
+                                <a href="index.html"> <button type="button" class="btn btn-outline-danger">Sim</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    <!-- Footer -->
+    <footer class="font-small rodape-ajusta">
+        <!-- rodapé -->
+        <div class="footer-menu footer-expand-lg shadow p-3  bg-light border">
+            <div class="row">
+                <div class="content-wrapper col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 mx-auto p-0 pt-5 pb-5 mx-auto">
+
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mx-auto ">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-4 col-lg-4	col-xl-4 mx-auto ">
+                                <h6>Informações</h6>
+                                <a href="INTERNO-sobre.html" class="text-secondary">Sobre o Acesso Cidadão</a> <br>
+                                <a href="INTERNO-servicos.html" class="text-secondary">Serviços Oferecidos</a><br>
+                                <a href="#" class="text-secondary">Termos de Serviço</a> <br>
+                                <a href="#" class="text-secondary">Política de Privacidade</a>
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md-4 col-lg-4	col-xl-4 mx-auto">
+                                <h6>Duvidas</h6>
+                                <a href="RODAPE-perguntas-frequentes.html" class="text-secondary">Perguntas frequentes</a> <br>
+                                <a href="#" class="text-secondary">Criação Conta</a><br>
+                                <a href="#" class="text-secondary">Recuperação de senha</a><br>
+                                <a href="#" class="text-secondary">Recuperação de conta</a>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-4 col-lg-4	col-xl-4 mx-auto">
+                                <h6>Contato</h6>
+                                <a href="RODAPE-fale-conosco.html" class="text-secondary">Fale conosco</a> <br><br>
+                                <h6>Redes Sociais</h6>
+                                <a href="#" class="text-secondary"><i class="fab fa-facebook-square"></i></a>
+                                <a href="#" class="text-secondary"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="text-secondary"><i class="fab fa-twitter-square"></i></a>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3 bg-azul-es text-white pt-3 mx-auto">
+            <div class="container">
+                <div class="col-xs-12 col-sm-12 col-md-10 col-md-10 col-lg-10 mx-auto">
+                    <div class="row ">
+
+                        <div class="col-xs-12 col-sm-12 col-md-10 col-md-10 col-lg-10 pt-3 mx-auto">
+                            <div class="footer-info text-black">
+                                <span class="footer-text">© 2015 <span class="year">- 2019</span> |</span><span class="footer-text footer-text-name"> Acesso Cidadão</span>
+                                <span> | </span> Desenvolvido pelo <a class="text-white" href="http://www.prodest.es.gov.br/" target="_blank" title="Acessar o portal do Prodest">PRODEST</a><span> | </span>
+                                <br>
+                                <span class="footer-text"><a class="text-white" target="_blank" title="Acessar o portal do Governo" href="http://www.es.gov.br/">Governo do Estado do Espírito Santo</a></span>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 mx-auto">
+                            <div class="logo-governo text-right">
+                                <img width="170" src="https://cdn.es.gov.br/images/logo/governo/brasao/right-white/Brasao_Governo_240.png" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer   -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/JS/validacao.js"></script>
+    <script>
+        //função para exibir mensagem de aviso quando o usuario seleciona a opção acesso cidadao
+        $('#change').change(function() {
+
+            var opcao = $('#change').val();
+            console.log(opcao)
+
+            if (opcao == 1) {
+                $('#modalDuvida').modal('show');
+            } else {
+                if (opcao == 0) {
+                    $('#modalDuvida').modal('hide');
+                }
+            }
+
+
+        });
+
+        function formatarCPF(campo) {
+            var tam = campo.value.length;
+            if (tam == 3) {
+                campo.value = campo.value + ".";
+            } else if (tam == 7) {
+                campo.value = campo.value + ".";
+            } else if (tam == 11) {
+                campo.value = campo.value + "-";
+            }
+        }
+        $(function() {
+            $('[data-toggle="popover"]').popover()
+        });
+
+        function buscaCPF() {
+
+            var CPF = document.getElementById('inputCPF').value;
+
+            var dados = {
+                'CPF': CPF,
+            };
+
+            var dados_jason = JSON.stringify(dados);
+            localStorage.setItem("Dados", dados_jason);
+
+            //console.log(CPF);
+
+            document.location.href = 'login.html';
+
+        }
+    </script>
+
+</body>
+
+</html>
